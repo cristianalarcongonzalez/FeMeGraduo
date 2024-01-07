@@ -51,6 +51,7 @@ import { VerProyectoFaseComponent } from './components/docente-panel/docente-com
 import {PracticasComponent} from './components/practicas/practicas.components';
 import {BibliografiaComponent} from './components/bibliografia/bibliografia.component';
 import { ObjetivosEComponent } from './components/objetivosE/objetivosE.component';
+import { JustificacionComponent } from './components/justificacion/justificacion.component';
 
 
 
@@ -81,6 +82,8 @@ const routes: Routes = [
   { path: 'pendiente-verificacion', component: PreregistroVerificarEstudianteComponent},
   { path: 'bibliografia', component: BibliografiaComponent},
   {path: 'objetivosE', component: ObjetivosEComponent},
+  {path: 'planteamiento-form', component: PlanteamientoComponent},
+  {path: 'justificacion', component: JustificacionComponent},
 
 
   { path: 'home-estudiantes', component: PrincipalEstudianteComponent, canActivate:[AuthGuard],data: { role: 'ESTUDIANTE' } ,children: [
