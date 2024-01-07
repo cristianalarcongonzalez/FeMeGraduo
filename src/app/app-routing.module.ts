@@ -49,6 +49,8 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { ProyectoFaseComponent } from './components/docente-panel/docente-comite/proyecto-fase/proyecto-fase.component';
 import { VerProyectoFaseComponent } from './components/docente-panel/docente-comite/modalidades/ver-proyecto-fase/ver-proyecto-fase.component';
 import {PracticasComponent} from './components/practicas/practicas.components';
+import {BibliografiaComponent} from './components/bibliografia/bibliografia.component';
+import { ObjetivosEComponent } from './components/objetivosE/objetivosE.component';
 
 
 
@@ -62,7 +64,7 @@ const routes: Routes = [
   {path: 'inicio', component: InitComponent },
   {path: 'programa', component: ProgramaComponent },
   {path: 'inf-general', component: GeneralInfoComponent},
-  {path: 'inf-espcifica', component:SpecificInfoComponent},
+  {path: 'inf-especifica', component:SpecificInfoComponent},
   {path: 'inf-general_addUsers', component:GeneralInfoAddStudentComponent},
   {path: 'register', component:RegisterComponent},
   {path: 'login', component:LoginComponent},
@@ -77,6 +79,8 @@ const routes: Routes = [
   { path: 'calificaciones', component: DetalleProyectoCalificacionesComponent },
   { path: 'comentarios', component: DetalleProyectoComentariosComponent },
   { path: 'pendiente-verificacion', component: PreregistroVerificarEstudianteComponent},
+  { path: 'bibliografia', component: BibliografiaComponent},
+  {path: 'objetivosE', component: ObjetivosEComponent},
 
 
   { path: 'home-estudiantes', component: PrincipalEstudianteComponent, canActivate:[AuthGuard],data: { role: 'ESTUDIANTE' } ,children: [

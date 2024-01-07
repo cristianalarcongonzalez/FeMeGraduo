@@ -130,13 +130,6 @@ generalInfoSave() {
   this.router.navigate(['inf-espcifica']);
 }
 
-specificInfoSave() {
-  if (this.generalInfo.invalid) {
-    return;
-  }
-  console.log(this.generalInfo.value);
-  this.router.navigate(['inf-espcifica']);
-}
 
 openAddUsersModal() {
   this.router.navigate(['/inf-general_addUsers']);

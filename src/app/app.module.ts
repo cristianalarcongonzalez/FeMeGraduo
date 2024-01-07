@@ -68,6 +68,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ProyectoFaseComponent } from './components/docente-panel/docente-comite/proyecto-fase/proyecto-fase.component';
 import { VerProyectoFaseComponent } from './components/docente-panel/docente-comite/modalidades/ver-proyecto-fase/ver-proyecto-fase.component';
+import { BibliografiaComponent } from './components/bibliografia/bibliografia.component';
+import { ObjetivosEComponent } from './components/objetivosE/objetivosE.component';
 
 const routes = [
   {
@@ -141,6 +143,8 @@ const routes = [
     ConfirmUploadDialogComponent,
     ProyectoFaseComponent,
     VerProyectoFaseComponent,
+    BibliografiaComponent,
+    ObjetivosEComponent
     
   ],
   imports: [

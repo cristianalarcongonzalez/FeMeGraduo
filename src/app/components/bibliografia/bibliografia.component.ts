@@ -1,18 +1,20 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { config } from 'src/config/config';
 
 @Component({
-  selector: 'app-specific-info',
-  templateUrl: './specific-info.component.html',
-  styleUrls: ['./specific-info.component.css']
+  selector: 'app-bibliografia',
+  templateUrl: './bibliografia.component.html',
+  styleUrls: ['./bibliografia.component.css']
 })
-export class SpecificInfoComponent {
-
-  tittle1 = "1. INFORMACIÓN GENERAL DE LA PROPUESTA DE PROYECTO DE GRADO";
-  tittle2 = "2. INFORMACIÓN ESPECIFICA DE LA PROPUESTA DE PROYECTO DE GRADO";
-  generalInfo: FormGroup;
-  specificInfo: FormGroup;
+export class BibliografiaComponent {
+  tittle5 = "5. OBJETIVO GENERAL";
+  tittle6 = "6. OBJETIVOS ESPECIFICOS";
+  tittle7 = "7. BIBLIOGRAFÍA";
+  objetivosForm: FormGroup;
+  bibliografiaForm: FormGroup;
+  
   tableComponent: { nombre: string }[] = [
     { nombre: "Nombre estudiante" },
     { nombre: "Identificación" },
@@ -28,15 +30,13 @@ export class SpecificInfoComponent {
   
 
   constructor(private formBuilder: FormBuilder, private router: Router) {
-    this.generalInfo = this.formBuilder.group({
-      title: ['', [Validators.required]],
+    this.objetivosForm = this.formBuilder.group({
+      objetivoGeneral: ['', [Validators.required]],
+      objetivoEspecifico: ['', [Validators.required]],
     });
-    this.specificInfo = this.formBuilder.group({
-      inv_line: ['', [Validators.required]],
-      sub_inv_line:['', [Validators.required]],
-      tematicArea:['', [Validators.required]],
-      inv_group:['', [Validators.required]],
-    })
+    this.bibliografiaForm = this.formBuilder.group({
+      bibliografia: ['', [Validators.required]],
+    });
 
     this.generateTestData();
   }
@@ -122,18 +122,24 @@ removeSelectedStudent() {
 
 
 
-generalInfoSave() {
-  if (this.generalInfo.invalid) {
+objetivosFormSave() {
+  if (this.objetivosForm.invalid) {
     return;
   }
-  console.log(this.generalInfo.value);
+  console.log(this.objetivosForm.value);
   this.router.navigate(['inf-espcifica']);
 }
 
+specificInfoSave() {
+  if (this.objetivosForm.invalid) {
+    return;
+  }
+  console.log(this.objetivosForm.value);
+  this.router.navigate(['inf-espcifica']);
+}
 
 openAddUsersModal() {
   this.router.navigate(['/inf-general_addUsers']);
 } 
   
-
 }
