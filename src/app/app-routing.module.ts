@@ -48,7 +48,7 @@ import { DocenteAsesorComponent } from './components/docente-panel/docente-aseso
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { ProyectoFaseComponent } from './components/docente-panel/docente-comite/proyecto-fase/proyecto-fase.component';
 import { VerProyectoFaseComponent } from './components/docente-panel/docente-comite/modalidades/ver-proyecto-fase/ver-proyecto-fase.component';
-import {PracticasComponent} from './components/practicas/practicas.components';
+import {PracticasComponent} from './components/practicas/practicas.component'
 import {BibliografiaComponent} from './components/bibliografia/bibliografia.component';
 import { ObjetivosEComponent } from './components/objetivosE/objetivosE.component';
 import { JustificacionComponent } from './components/justificacion/justificacion.component';
@@ -85,6 +85,7 @@ const routes: Routes = [
   {path: 'objetivosE', component: ObjetivosEComponent},
   {path: 'planteamiento-form', component: PlanteamientoComponent},
   {path: 'justificacion', component: JustificacionComponent},
+  {path: 'practicas', component: PracticasComponent},
 
 
   { path: 'home-estudiantes', component: PrincipalEstudianteComponent, canActivate:[AuthGuard],data: { role: 'ESTUDIANTE' } ,children: [

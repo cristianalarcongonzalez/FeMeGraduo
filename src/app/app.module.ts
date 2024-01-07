@@ -71,6 +71,7 @@ import { VerProyectoFaseComponent } from './components/docente-panel/docente-com
 import { BibliografiaComponent } from './components/bibliografia/bibliografia.component';
 import { ObjetivosEComponent } from './components/objetivosE/objetivosE.component';
 import {JustificacionComponent} from './components/justificacion/justificacion.component';
+import { PracticasComponent } from './components/practicas/practicas.component';
 
 const routes = [
   {
@@ -148,6 +149,7 @@ const routes = [
     ObjetivosEComponent,
     PlanteamientoComponent,
     JustificacionComponent,
+    PracticasComponent
     
   ],
   imports: [
