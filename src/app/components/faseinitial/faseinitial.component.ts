@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class FaseinitialComponent {
 
+  title = 'FASE INICIAL AVAL PRACTICAS ACADÉMICAS';
+  
+  description = 'En esta fase se debe diligenciar los siguientes anexos:';
+  description2 = 'Para descargar los anexos, haga clic en el botón de descarga correspondiente a cada anexo.';
+  description3 = 'Anexos requeridos para la practica académica';
   cards = [
     { title: 'ANEXO A', description: 'FORMATO SOLICITUD INICIO O INSCRIPCION DE LA PRACTICA' },
     { title: 'ANEXO B', description: 'CARTA DE PRESENTACIÓN Y/O AVAL DEL ESTUDIANTE' },

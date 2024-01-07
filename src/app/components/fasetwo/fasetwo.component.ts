@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class FasetwoComponent {
 
+  title = 'FASE II PRACTICAS ACADÉMICAS';
+  
+  description = 'En esta fase se debe diligenciar los siguientes anexos:';
+  description2 = 'Para descargar los anexos, haga clic en el botón de descarga correspondiente a cada anexo.';
+  description3 = 'Anexos requeridos para la practica académica';
   cards = [
     { title: 'PROTOCOLO', description: 'PROTOCOLO DE ORIENTACIÓN PRA LA ELABORACIÓN DEL PLAN DE TRABAJO' },
     { title: 'EVALUACIÓN', description: 'EVALUACIÓN PARA LOS INFORMES DE FASE II' },
