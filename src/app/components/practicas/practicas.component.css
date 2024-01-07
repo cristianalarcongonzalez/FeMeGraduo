@@ -1,11 +1,12 @@
+/* card.component.css */
+
 .card {
   border: 1px solid #ccc;
   border-radius: 8px;
   margin: 15px;
   padding: 15px;
   width: 200px;
-  display: inline-table;
-
+  display: inline-block;
 }
 
 .card-header {
@@ -14,11 +15,21 @@
   margin-bottom: 10px;
 }
 
-.card-footer {
-  margin-top: 10px;
+.approved {
+  background-color: #28a745; /* Green */
+  color: white;
 }
 
-.btn-success {
-  background-color: #28a745;
+.rejected {
+  background-color: #dc3545; /* Red */
+  color: white;
+}
+
+.in-review {
+  background-color: #ffc107; /* Yellow */
+}
+
+.pending-review {
+  background-color: #007bff; /* Blue */
   color: white;
 }

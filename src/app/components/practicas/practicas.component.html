@@ -1,18 +1,10 @@
 <app-header-practicas></app-header-practicas>
-<h1>Anexos Requeridos para las practicas Academicas</h1>
-<h2>Anexos</h2>
 
-<div class="card" *ngFor="let card of cards">
-    <div class="card-header">
-      {{ card.title }}
-    </div>
-    <div class="card-body">
-      {{ card.description }}
-    </div>
-    <div class="card-footer">
-      <button class="btn btn-success" (click)="downloadPDF(card.title)">Descargar PDF</button>
-    </div>
-  </div>
-  
+<div>
+  <app-card-states [phase]="{ phaseName: 'Fase 1', state: 'aprobado' }"></app-card-states>
+  <app-card-states [phase]="{ phaseName: 'Fase 2', state: 'en revision' }"></app-card-states >
+  <app-card-states [phase]="{ phaseName: 'Fase 3', state: 'pendiente por revisar' }"></app-card-states>
+</div>
+
 
 

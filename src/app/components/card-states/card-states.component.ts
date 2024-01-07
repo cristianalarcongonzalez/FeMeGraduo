@@ -1,12 +1,11 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-practicas',
-  templateUrl: './practicas.component.html',
-  styleUrls: ['./practicas.component.css']
+  selector: 'app-card-states',
+  templateUrl: './card-states.component.html',
+  styleUrls: ['./card-states.component.css']
 })
-export class PracticasComponent {
-
+export class CardStatesComponent {
 
   @Input() phase: { phaseName: string; state: string };
 

@@ -19,7 +19,7 @@ export class HomeComponent {
   constructor(private title: Title, private meta: Meta, 
     private router: Router) 
     {
-      this.title.setTitle('Character NFT template')
+      this.title.setTitle('Fé Me Graduo')
       this.meta.addTags([
         {
           property: 'og:title',
