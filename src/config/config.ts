@@ -10,7 +10,7 @@ export const config= {
         {nombre: "5. OBJETIVO GENERAL", url:'/objetivos'},
         {nombre: "6. OBJETIVOS ESPECÍFICOS", url:'/objetivosE'},
         {nombre: "7. BIBLIOGRAFÍA", url:'/bibliografia'},
-        {nombre: "8. ADJUNTAR DOCUMENTOS", url:'/adjuntar-docs'},
+        {nombre: "8. ADJUNTAR DOCUMENTOS", url:'/anexos'},
     ]
     
 };
