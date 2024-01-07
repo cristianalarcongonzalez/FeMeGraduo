@@ -12,4 +12,5 @@ export const config= {
         {nombre: "7. BIBLIOGRAFÍA", url:'/bibliografia'},
         {nombre: "8. ADJUNTAR DOCUMENTOS", url:'/adjuntar-docs'},
     ]
+    
 };
