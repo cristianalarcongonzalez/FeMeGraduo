@@ -55,6 +55,11 @@ import { JustificacionComponent } from './components/justificacion/justificacion
 import { FaseoneComponent } from './components/faseone/faseone.component';
 import { FasetwoComponent } from './components/fasetwo/fasetwo.component';
 import { FaseinitialComponent } from './components/faseinitial/faseinitial.component';
+import { SeescheduleComponent } from './components/seeschedule/seeschedule.component';
+import { UploadfilefaseinitialComponent } from './components/uploadfilefaseinitial/uploadfilefaseinitial.component';
+import { UploadfilefaseoneComponent } from './components/uploadfilefaseone/uploadfilefaseone.component';
+import { UploadfilefasetwoComponent } from './components/uploadfilefasetwo/uploadfilefasetwo.component';
+import { EstablecerconveniosComponent } from './components/establecerconvenios/establecerconvenios.component';
 
 
 
@@ -87,10 +92,17 @@ const routes: Routes = [
   {path: 'objetivosE', component: ObjetivosEComponent},
   {path: 'planteamiento-form', component: PlanteamientoComponent},
   {path: 'justificacion', component: JustificacionComponent},
+
+  //rutas practicas academicas usuario estudiante
   {path: 'practicas', component: PracticasComponent},
   {path:'faseone',component:FaseoneComponent},
   {path:'fasetwo',component:FasetwoComponent} ,
   {path:'faseinitial',component:FaseinitialComponent},
+  {path:'seeschedule',component:SeescheduleComponent},
+  {path:'establishmentagreement',component:EstablecerconveniosComponent},
+  {path:'uploadsfilesfaseinitial',component:UploadfilefaseinitialComponent},
+  {path:'uploadfilesfasetwo',component:UploadfilefasetwoComponent},
+  {path:'uploadfilesfaseone',component:UploadfilefaseoneComponent},
 
 
   { path: 'home-estudiantes', component: PrincipalEstudianteComponent, canActivate:[AuthGuard],data: { role: 'ESTUDIANTE' } ,children: [

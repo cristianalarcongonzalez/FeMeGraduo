@@ -19,10 +19,10 @@ export const config= {
         {nombre: "ANEXOS AVAL PRACTICAS", url:'/faseinitial'},
         {nombre: "ANEXOS FASE I", url:'/faseone'},
         {nombre: "ANEXOS FASE II", url:'/fasetwo'},
-        {nombre: "SUBIR ANEXOS AVAL PRACTICAS", url:'/objetivos'},
-        {nombre: "SUBIR ANEXOS FASE I", url:'/objetivosE'},
-        {nombre: "SUBIR ANEXOS FASE II", url:'/bibliografia'},
-        {nombre: "VER CRONOGRAMA", url:'/anexos'},
-        {nombre: "ESTABLECER & VER CONVENIOS", url:'/anexos'},
+        {nombre: "SUBIR ANEXOS AVAL PRACTICAS", url:'/uploadsfilesfaseinitial'},
+        {nombre: "SUBIR ANEXOS FASE I", url:'/uploadfilesfaseone'},
+        {nombre: "SUBIR ANEXOS FASE II", url:'/uploadfilesfasetwo'},
+        {nombre: "VER CRONOGRAMA", url:'/seeschedule'},
+        {nombre: "ESTABLECER & VER CONVENIOS", url:'/establishmentagreement'},
     ]
 };

@@ -77,6 +77,11 @@ import { FaseoneComponent } from './components/faseone/faseone.component';
 import { FasetwoComponent } from './components/fasetwo/fasetwo.component';
 import { HeaderPracticasComponent } from './components/header-practicas/header-practicas.component';
 import { CardStatesComponent } from './components/card-states/card-states.component';
+import { UploadfilefaseoneComponent } from './components/uploadfilefaseone/uploadfilefaseone.component';
+import { UploadfilefasetwoComponent } from './components/uploadfilefasetwo/uploadfilefasetwo.component';
+import { UploadfilefaseinitialComponent } from './components/uploadfilefaseinitial/uploadfilefaseinitial.component';
+import { EstablishagreementsComponent } from './components/establishagreements/establishagreements.component';
+import { SeescheduleComponent } from './components/seeschedule/seeschedule.component';
 
 const routes = [
   {
@@ -159,7 +164,12 @@ const routes = [
     FaseoneComponent,
     FasetwoComponent,
     HeaderPracticasComponent,
-    CardStatesComponent
+    CardStatesComponent,
+    UploadfilefaseoneComponent,
+    UploadfilefasetwoComponent,
+    UploadfilefaseinitialComponent,
+    EstablishagreementsComponent,
+    SeescheduleComponent
   ],
   imports: [
     BrowserModule,
