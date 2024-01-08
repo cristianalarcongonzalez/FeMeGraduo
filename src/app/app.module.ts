@@ -72,6 +72,11 @@ import { BibliografiaComponent } from './components/bibliografia/bibliografia.co
 import { ObjetivosEComponent } from './components/objetivosE/objetivosE.component';
 import {JustificacionComponent} from './components/justificacion/justificacion.component';
 import { PracticasComponent } from './components/practicas/practicas.component';
+import { FaseinitialComponent } from './components/faseinitial/faseinitial.component';
+import { FaseoneComponent } from './components/faseone/faseone.component';
+import { FasetwoComponent } from './components/fasetwo/fasetwo.component';
+import { HeaderPracticasComponent } from './components/header-practicas/header-practicas.component';
+import { CardStatesComponent } from './components/card-states/card-states.component';
 
 const routes = [
   {
@@ -149,8 +154,12 @@ const routes = [
     ObjetivosEComponent,
     PlanteamientoComponent,
     JustificacionComponent,
-    PracticasComponent
-    
+    PracticasComponent,
+    FaseinitialComponent,
+    FaseoneComponent,
+    FasetwoComponent,
+    HeaderPracticasComponent,
+    CardStatesComponent
   ],
   imports: [
     BrowserModule,

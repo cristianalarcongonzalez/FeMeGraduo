@@ -11,6 +11,18 @@ export const config= {
         {nombre: "6. OBJETIVOS ESPECÍFICOS", url:'/objetivosE'},
         {nombre: "7. BIBLIOGRAFÍA", url:'/bibliografia'},
         {nombre: "8. ADJUNTAR DOCUMENTOS", url:'/anexos'},
-    ]
+    ],
     
+
+    menuComponentPracticas:[
+        {nombre: "VER ESTADO DE PRACTICAS", url:'/practicas'},
+        {nombre: "ANEXOS AVAL PRACTICAS", url:'/faseinitial'},
+        {nombre: "ANEXOS FASE I", url:'/faseone'},
+        {nombre: "ANEXOS FASE II", url:'/fasetwo'},
+        {nombre: "SUBIR ANEXOS AVAL PRACTICAS", url:'/objetivos'},
+        {nombre: "SUBIR ANEXOS FASE I", url:'/objetivosE'},
+        {nombre: "SUBIR ANEXOS FASE II", url:'/bibliografia'},
+        {nombre: "VER CRONOGRAMA", url:'/anexos'},
+        {nombre: "ESTABLECER & VER CONVENIOS", url:'/anexos'},
+    ]
 };
