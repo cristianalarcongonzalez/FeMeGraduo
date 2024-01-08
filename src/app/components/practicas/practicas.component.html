@@ -1,10 +1,11 @@
 <app-header-practicas></app-header-practicas>
-
-<div>
-  <app-card-states [phase]="{ phaseName: 'Fase 1', state: 'aprobado' }"></app-card-states>
-  <app-card-states [phase]="{ phaseName: 'Fase 2', state: 'en revision' }"></app-card-states >
-  <app-card-states [phase]="{ phaseName: 'Fase 3', state: 'pendiente por revisar' }"></app-card-states>
-</div>
-
-
-
+<div class="container">
+  <div class="row">
+  <div class="col-lg-12">
+    <div>
+      <app-card-states [phase]="{ phaseName: 'Fase 1', state: 'aprobado' }"></app-card-states>
+      <app-card-states [phase]="{ phaseName: 'Fase 2', state: 'en revision' }"></app-card-states >
+      <app-card-states [phase]="{ phaseName: 'Fase 3', state: 'pendiente por revisar' }"></app-card-states>
+    </div>
+  
+  </div>

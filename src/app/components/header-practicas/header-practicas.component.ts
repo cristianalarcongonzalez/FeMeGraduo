@@ -11,7 +11,7 @@ import { config } from 'src/config/config';
 })
 export class HeaderPracticasComponent {
 
-  menuComponent = config.menuComponentsPracticas;
+  menuComponentPracticas = config.menuComponentPracticas;
   currentDate: Date;
 
 

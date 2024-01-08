@@ -52,7 +52,9 @@ import {PracticasComponent} from './components/practicas/practicas.component'
 import {BibliografiaComponent} from './components/bibliografia/bibliografia.component';
 import { ObjetivosEComponent } from './components/objetivosE/objetivosE.component';
 import { JustificacionComponent } from './components/justificacion/justificacion.component';
-
+import { FaseoneComponent } from './components/faseone/faseone.component';
+import { FasetwoComponent } from './components/fasetwo/fasetwo.component';
+import { FaseinitialComponent } from './components/faseinitial/faseinitial.component';
 
 
 
@@ -86,6 +88,9 @@ const routes: Routes = [
   {path: 'planteamiento-form', component: PlanteamientoComponent},
   {path: 'justificacion', component: JustificacionComponent},
   {path: 'practicas', component: PracticasComponent},
+  {path:'faseone',component:FaseoneComponent},
+  {path:'fasetwo',component:FasetwoComponent} ,
+  {path:'faseinitial',component:FaseinitialComponent},
 
 
   { path: 'home-estudiantes', component: PrincipalEstudianteComponent, canActivate:[AuthGuard],data: { role: 'ESTUDIANTE' } ,children: [
